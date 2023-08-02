@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="icon" type="image/ico" href="hot_temperature_icon_255346.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Questrial&family=Scope+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <div class="header">
+        <section class="container">
+            <div class="weather-body">
+                <!-- serching part starts  -->
+                <div class="input">
+                    <div class="search">
+                        <input type="text" name="searh_box" placeholder="search places ..." class="input-box" required
+                            maxlength="100">
+                        <button type="submit" class="fa fa-search" name="serach_btn" id="searchBtn"> </button>
+                    </div>
+                    <div id="toggle-btn" class="fas fa-sun"></div>
+                </div>
+                <!-- serching part end  -->
+                <div class="location-not-found">
+                    <h1 class="heading">Soryy, Location not found</h1>
+                    <img src="images/404.png" alt="">
+                </div>
+                <!-- weather-forecast start  -->
+                <div class="weather_main">
+            <div class="weather-forecast">
+                <h1 class="heading location"></h1>
+                    <img src="images/cloud.png" alt="weather cloud img" class="weather-img">
+                </div>
+
+                <!-- weather-forecast ends  -->
+                <div class="weather-box">
+                    <p class="temperature heading">0°C</p>
+                    <p class="description heading">N/A</p>
+                </div>
+
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="text heading-b">
+                           <span id="humidity"> 0%</span>
+                           <p class="heading-a">humidity</p>
+                        </div>
+                    </div>
+                        <div class="wind-speed">
+                            <i class="fa-solid fa-wind"></i>
+                            <div class="text heading-b">
+                               <span id="wind-speed"> 0kmph</span>
+                               <p class="heading-a">wind speed</p>
+                            </div>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </section>
+    </div>
+    <!-- header section ends  -->
+
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

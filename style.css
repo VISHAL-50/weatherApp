@@ -1,0 +1,221 @@
+:root {
+    --main-color: #8e44ad;
+    /* --main-color: #ff9933; */
+    --red: #e74c3c;
+    --orange: #f39c12;
+    --white: #fff;
+    --black: #2c3e50;
+    --light-color: #888;
+    --light-bg: #87CEEB;
+    --border: .1rem solid rgba(0, 0, 0, .2);
+
+}
+
+* {
+    font-family: 'Bitter', serif;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Scope One', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+html {
+    font-size: 61.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: 	#87CEEB;
+    min-height: 100vh;
+    transition: .2s linear;
+    /* background-color: red; */
+
+
+}
+
+body.dark {
+    --white: #222;
+    --black: #fff;
+    --light-color: #aaa;
+    --light-bg: #333;
+    --border: .1rem solid rgba(255, 255, 255, .2);
+}
+.heading {
+    padding-bottom: 1.8rem;
+    /* border-bottom: var(--border); */
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.heading-a{
+    padding-bottom: 1.8rem;
+    border-bottom: var(--border);
+    font-size: 1.8rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.heading-b{
+    padding-bottom: 2rem;
+    /* border-bottom: var(--border); */
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+ .container{
+    min-height: 100vh;
+    /* width: 20rem; */
+    /* background-color: var(--light-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .weather-body {
+ height: 60rem;
+ height: min-content;
+ width: 35rem;
+
+ padding: 2rem;
+ border-radius: .7rem;
+ background-color: var(--white);
+ transition: .5s linear;
+}
+.container .weather-body:hover{
+ box-shadow: 10px 10px 20px;
+ /* scale: calc(1.2); */
+
+}
+
+.container .weather-body .input{
+    display: flex;
+    line-height: 2rem;
+    justify-content: space-between;
+    /* background-color: var(--light-color); */
+}
+.container .weather-body .input .search{
+    width: 80%;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: .5rem 1rem;
+    background-color: var(--light-bg);
+
+
+}
+.weather-body .input .search input {
+    width: 100%;
+    background: none;
+    font-size: 1.3rem;
+    color: var(--black);
+    padding-left: 1rem;
+}
+
+.weather-body .input .search button {
+    font-size: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    padding-right: 1rem;
+}
+
+.input #toggle-btn{
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: 5.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    width: 4.5rem;
+    line-height: 4.4rem;
+    background-color: var(--light-bg);
+    text-align: center;
+    margin-left: .5rem;
+}
+.input #toggle-btn:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.weather-forecast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: var(--light-bg); */
+    margin-block: 2rem;
+
+}
+
+.weather-forecast img{
+    width: 60%;
+}
+.location-not-found{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+
+}
+.location-not-found img{
+    width: 70%;
+}
+
+.weather-box{
+    margin-block: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.weather-box .temperature{
+    font-weight: bolder;
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 1rem; */
+}
+.weather-details i{
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    margin-block: 2rem;
+    color: var(--main-color);
+}
+.weather-details .humidity{
+    display: flex;
+    gap: 1.2rem;
+}
+.weather-details .wind-speed{
+    display: flex;
+    gap: 1.2rem;
+}
