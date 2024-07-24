@@ -1,4 +1,4 @@
-# bharatIq-Task2-weatherApp
+# weatherApp
 # sample
 ![chrome_ipdZAtWHnx](https://github.com/VISHAL-50/bharatIq-Task2-weatherApp/assets/95730585/91dee02f-dbea-4455-a2b6-919960be8cf5)
 
